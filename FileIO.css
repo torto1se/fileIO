@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Vina+Sans&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header, footer {
+    background-color: #202020;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Vina Sans', sans-serif;
+}
+.container {
+    display: flex;
+    flex: 1; 
+}
+.sidebarL{
+    width: 15%;
+    background-color: #e0e0e0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.sidebarR{
+    width: 15%;
+    background-color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-content {
+    flex: 1; 
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+button, input {
+    cursor: pointer;
+    border-radius: 50px ;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+#selectedImage{
+    max-width: 100%; 
+    max-height: 300px; 
+    margin-top: 30px;
+}

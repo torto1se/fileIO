@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="FileIO.css">
+</head>
+<body>
+    <header>
+        <h1>Маркетплейс</h1>
+    </header>
+    <div class="container">
+        <div class="sidebarL">
+            <h2>Категории</h2>
+            <ul>
+                <li>Электронника</li><br>
+                <img src="https://main-cdn.sbermegamarket.ru/big1/hlr-system/-56/666/820/075/134/8/100028742967b0.jpg" width="100%">
+                <li>Продукты</li><br>
+                <img src="https://www.medgorod.ru/sites/default/files/styles/gallery-slider-mobile/public/article_photo/produkty.jpg?itok=_T3D-Cnd" width="100%">
+                <li>Спортивные товары</li><br>
+                <img src="https://b1.m24.ru/c/1955272.jpg" width="100%">
+            </ul>
+        </div>
+        <div class="main-content">
+            <div style="margin: 10px;">
+            <button id="saveTextFile" onclick="handleTextFileSave()">Сохранить текстовый файл</button>
+            <input type="file" id="fileInputText">
+            </div>
+            <div style="margin: 150px 10px;">
+                Выберите изображение:
+            <input type="file" id="fileInputImage" title="Загрузить изображение"> <br>
+            <img id="selectedImage">
+            </div>
+        </div>
+        <div class="sidebarR">
+            <h2>
+                Специальное предложение!
+            </h2>
+            <img src="https://skidkimarket.ru/media/img/1000x0/2023-02/ashan002_katalog148753%20(1).jpg" width="100%">
+        </div>
+    </div>
+    <footer>
+        <div class="footerText">
+            &copy Маркетплейс 2023
+        </div>
+        <div class="footerText">
+            Все права защищены
+        </div>
+        <div class="footerText">
+            О компании
+        </div>
+        <div class="footerText">
+            Доставка
+        </div>
+    </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script src="FileIO.js"></script>
+</body>
+</html>
