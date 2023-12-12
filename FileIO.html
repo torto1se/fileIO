@@ -12,26 +12,35 @@
     </header>
     <div class="container">
         <div class="sidebarL">
-            <h2>Категории</h2>
-            <ul>
-                <li>Электронника</li><br>
-                <img src="https://main-cdn.sbermegamarket.ru/big1/hlr-system/-56/666/820/075/134/8/100028742967b0.jpg" width="100%">
-                <li>Продукты</li><br>
-                <img src="https://www.medgorod.ru/sites/default/files/styles/gallery-slider-mobile/public/article_photo/produkty.jpg?itok=_T3D-Cnd" width="100%">
-                <li>Спортивные товары</li><br>
-                <img src="https://b1.m24.ru/c/1955272.jpg" width="100%">
-            </ul>
+            <div style="margin: 10px;">
+                <button id="saveTextFile" onclick="handleTextFileSave()">Сохранить текстовый файл</button>
+                <input type="file" id="fileInputText">
+                <div id="fileContents" style="color: red;"></div><br>
+                <div id="fileSize" style="color: red;"></div>
+                </div>
+                <div style="margin: 150px 10px;">
+                    Выберите изображение:
+                <input type="file" id="fileInputImage" title="Загрузить изображение"> <br> <br>
+                <div id="imageStatus" style="color: red;"></div>
+                <img id="selectedImage">
+                </div>
         </div>
         <div class="main-content">
-            <div style="margin: 10px;">
-            <button id="saveTextFile" onclick="handleTextFileSave()">Сохранить текстовый файл</button>
-            <input type="file" id="fileInputText">
-            </div>
-            <div style="margin: 150px 10px;">
-                Выберите изображение:
-            <input type="file" id="fileInputImage" title="Загрузить изображение"> <br>
-            <img id="selectedImage">
-            </div>
+            <h1>Категории</h1>
+                <div class="main-inner">
+                   <div style="margin: 30px; border: 3px solid black; padding: 10px; border-radius: 10px;">
+                Электронника<hr>
+                <img src="https://main-cdn.sbermegamarket.ru/big1/hlr-system/-56/666/820/075/134/8/100028742967b0.jpg" width="300px" height="200px">
+                    </div>
+                    <div style="margin: 30px; border: 3px solid black; padding: 10px; border-radius: 10px;">
+                Продукты<hr>
+                <img src="https://www.medgorod.ru/sites/default/files/styles/gallery-slider-mobile/public/article_photo/produkty.jpg?itok=_T3D-Cnd" width="300px"height="200px">
+                </div>
+                <div style="margin: 30px;border: 3px solid black; padding: 10px; border-radius: 10px;">
+                Спортивные товары<hr>
+                <img src="https://b1.m24.ru/c/1955272.jpg" width="300px"height="200px">
+                </div>
+                </div>
         </div>
         <div class="sidebarR">
             <h2>

@@ -5,7 +5,7 @@ function handleImageSelect(event) {
         reader.onload = function(e) {
             let imageData = e.target.result;
             document.getElementById('selectedImage').src = imageData;
-            alert('Изображение загружено!');
+            document.getElementById('imageStatus').innerText = 'Изображение загружено!';
         };
         reader.readAsDataURL(file);
     }
@@ -17,8 +17,8 @@ function handleTextFileRead(event) {
         let reader = new FileReader();
         reader.onload = function(e) {
             let contents = e.target.result;
-            alert('Содержимое файла:\n' + contents);
-            alert('Размер файла: ' + file.size + ' байт');
+            document.getElementById('fileContents').innerText = 'Содержимое файла:\n' + contents;
+            document.getElementById('fileSize').innerText = 'Размер файла: ' + file.size + ' байт';
         };
         reader.readAsText(file);
     }
@@ -26,7 +26,7 @@ function handleTextFileRead(event) {
 
 function handleTextFileSave() {
     let blob = new Blob(["Привет"], {type: "text/plain;charset=utf-8"});
-    saveAs(blob, "savedFile.txt");
+    saveAs(blob, "hello.txt");
 }
 
 document.getElementById('fileInputImage').addEventListener('change', handleImageSelect);
